@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Document</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #2F3136;
+            color: whitesmoke;
+        }
+        
+        .row {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            width: 100%;
+        }
+
+        div#baller {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .groups {
+            display: flex;
+            gap: 40px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        input {
+            background-color: #40444B;
+            border: none;
+            padding: 10px 12px;
+            border-radius: 5px;
+            color: whitesmoke;
+            width: 240px;
+            box-sizing: border-box;
+        }
+
+        input[type="button"] {
+            margin-top: 6px;
+            padding: 10px 16px;
+            border-radius: 6px;
+            background: #bfa14a;
+            color: #3a2c0a;
+            border: none;
+        }
+        h1 {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+<h1>GWA calculator :p</h1>
+<hr>
+<div id="baller">
+    <div>
+        <form>
+            <input type="text" id="input1" placeholder="Enter your name">
+            <input type="text" id="input2" placeholder="Enter your age">
+        </form>
+     </div>
+
+    <div class="groups">
+        <div class="col">
+            <div id="scigrade">
+                <form>
+                    <input type="number" id="scigr" placeholder="enter yo science grade">
+                </form>
+            </div>
+            <div id="mthgrade">
+                <form>
+                   <input type="number" id="mthgr" placeholder="enter yo math grade">
+                </form>
+            </div>
+            <div id="enggrade">
+                <form>
+                    <input type="number" id="enggr" placeholder="enter yo english grade">
+                </form>
+            </div>
+        </div>
+
+        <div class="col">
+            <div id="filgrade">
+                <form>
+                    <input type="number" id="filgr" placeholder="enter yo filipino grade">
+                </form>
+            </div>
+            <div id="pegrade">
+                <form>
+                    <input type="number" id="pegr" placeholder="enter yo P.E grade">
+                </form>
+            </div>
+            <div id="ictgrade">
+                <form>
+                    <input type="number" id="ictgr" placeholder="enter yo ICT grade">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <input type="button" value="calculate everythang" py-click="getting_allat">
+</div>
+
+    <div id="output"></div>
+    <py-script src="main.py"></py-script>
+
+<footer>
+    <p> Thomas Taylor Coeli | 10-Emerald</p>
+</footer>
+</body>
+</html>
