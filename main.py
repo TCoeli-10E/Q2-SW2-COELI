@@ -32,5 +32,7 @@ def getting_allat(e):
     ICT: {ict_grade}<br>
     <strong>GWA:</strong> {gwa:.2f}
     '''   # i googled the decimal place thing i think
+    Passd = f'''Passed'''
+    faild = f'''Failed'''
 
     document.getElementById('output').innerHTML = html
