@@ -17,9 +17,9 @@ def getting_allat(e):
     total_points = sum(g * u for g, u in zip(subjects, units))   # formula was googled
     gwa = total_points / total_units if total_units else 0   # to avoid division by zero
     if gwa > 74 
-        display(f'you passed!', target="output")
+        document.getElementById('passfail').innerHTML = "you passed"
     else 
-        display(f'you failed :(', target="output")
+        document.getElementById('passfail').innerHTML = "you failed"
 
     html = f'''
     student name: {first_name} {last_name}<br>
@@ -34,4 +34,5 @@ def getting_allat(e):
     '''   # i googled the decimal place thing i think
 
     document.getElementById('output').innerHTML = html
+
 
